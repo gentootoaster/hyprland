@@ -1,0 +1,115 @@
+@import "colors.css";
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, JetBrains Mono;
+    font-weight: bold; 
+    font-size: 20px;
+}
+
+window#waybar {
+    border-radius: 10;
+    background-color: @base;
+    color: @text;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+/* you can set a style on hover for any module like this */
+#pulseaudio:hover {
+    background-color: #a37800;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: @text;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.active {
+    color: @blue;
+}
+
+#workspaces button.urgent {
+    color: @red;
+}
+
+#custom-icon,
+#custom-media,
+#workspaces,
+#window,
+#language,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpd {
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: @crust;
+    padding: 0 10px;
+    color: @text;
+}
+
+#workspaces {
+   margin-left: 5px;
+}
+
+#clock {
+   margin-right: 5px;
+}
+
+#window {
+   color: #eebebe;
+}
