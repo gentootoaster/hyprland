@@ -2,14 +2,14 @@
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "width": 1880,
-    "margin-top": 10,
-    "height": 40, // Waybar height (to be removed for auto height)
+    // "width": 1880,
+    // "margin-top": 10,
+    // "height": 40, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 5, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [ "hyprland/workspaces", "hyprland/window" ],
-    "modules-center": [ "custom/media" ],
+    "modules-center": [ "custom/media", "custom/weather" ],
     "modules-right": ["tray", "pulseaudio", "hyprland/language", "clock" ],
     // Modules configuration
     "hyprland/workspaces": {
@@ -19,7 +19,8 @@
 	"1": [],
         "2": [],
         "3": [],
-        "4": []
+        "4": [],
+	"5": []
         },
         "tooltip": false
     },
@@ -27,6 +28,11 @@
     "tray": {
         "icon-size": 21,
         "spacing": 10
+    },
+    "custom/weather": {
+    "exec": "~/.venv/bin/python ~/weather/main.py",
+    "interval": 600,
+    "max-length": 10
     },
     "clock": {
         // "timezone": "America/New_York",

@@ -44,15 +44,15 @@
 @define-color	surface1-rgb  rgb(81, 87, 109);
 @define-color	surface0  #414559;
 @define-color	surface0-rgb  rgb(65, 69, 89);
-@define-color	base  #303446;
+@define-color	crust  #303446;
 @define-color	base-rgb  rgb(48, 52, 70);
 @define-color	mantle  #292c3c;
 @define-color	mantle-rgb  rgb(41, 44, 60);
-@define-color	crust  #232634;
+@define-color	base  #232634;
 @define-color	crust-rgb  rgb(35, 38, 52);
 
 * {
-  font-family: JetBrains Mono NF;
+  font-family: JetBrains Mono Nerd Font;
   font-weight: Bold;
   font-size: 16px;
 }
@@ -61,8 +61,8 @@
 window {
   margin: 0px;
   padding: 10px;
-  border: 0em solid @flamingo;
-  border-radius: 0.6em;
+  border: 0.1em solid @text;
+  border-radius: 0em;
   background-color: @base;
   animation: slideIn 0.5s ease-in-out both;
 }
@@ -143,6 +143,7 @@ window {
 }
 
 #entry {
+  border: none;
   background-color: @base;
 }
 
@@ -153,9 +154,9 @@ window {
 
 /* Selected Entry */
 #entry:selected {
-  border: 0.1em solid @flamingo;
+  border: 0.1em solid @text;
   background: @crust;
-  border-radius: 0.6em;
+  border-radius: 0em;
 }
 
 #entry:selected #text {

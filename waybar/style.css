@@ -1,14 +1,14 @@
 @import "colors.css";
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, JetBrains Mono;
+    font-family: FontAwesome, JetBrains Mono Nerd Font;
     font-weight: bold; 
-    font-size: 20px;
+    font-size: 18px;
 }
 
 window#waybar {
-    border-radius: 10;
-    background-color: @base;
+    border-radius: 0;
+    background-color: @crust;
     color: @text;
     transition-property: background-color;
     transition-duration: .5s;
@@ -57,7 +57,7 @@ button:hover {
 
 #workspaces button {
     padding: 0 5px;
-    background-color: transparent;
+    background-color: @surface0;
     color: @text;
 }
 
@@ -65,14 +65,19 @@ button:hover {
     background: rgba(0, 0, 0, 0.2);
 }
 
+#workspaces button.empty {
+    background: @base
+}
+
 #workspaces button.active {
-    color: @blue;
+    background-color: @overlay0;
 }
 
 #workspaces button.urgent {
     color: @red;
 }
 
+#custom-weather,
 #custom-icon,
 #custom-media,
 #workspaces,
@@ -94,15 +99,16 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #mpd {
-    border-radius: 10px;
+    border-radius: 0px;
     margin-top: 5px;
     margin-bottom: 5px;
-    background: @crust;
+    background: @base;
     padding: 0 10px;
     color: @text;
 }
 
 #workspaces {
+   padding: 0px;
    margin-left: 5px;
 }
 
