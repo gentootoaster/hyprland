@@ -1,5 +1,4 @@
 # hyprland
 -----------------------------------------------------------------------------------------
-![image](https://github.com/user-attachments/assets/90a938d6-d4ea-4b37-9f5f-7492b2ca2732)
-![image](https://github.com/user-attachments/assets/8a4d609f-e44c-4f1a-bc2a-67f203ce0d99)
-![image](https://github.com/user-attachments/assets/88787190-9d46-4a7b-87a1-dfd891ab7064)
+![image](https://github.com/user-attachments/assets/0b2526a4-a662-4a0b-90cc-c24b8045d3ba)
+![image](https://github.com/user-attachments/assets/f71e597f-a4b3-4f43-a6b5-5981b173dd4a)
